@@ -93,11 +93,7 @@ def init():
 	global cmkey
 	cmkey = fetchcmkey()
 
-	global collect
-	uri = 'mongodb://coml.asus.com:6683'
-	client = MongoClient(uri)
-	db = client['StockAnalysis']
-	collect = db['Stock']
+	
 	
 
 init()
